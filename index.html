@@ -44,24 +44,56 @@
 </head>
 
 <body ng-app="cwist">
-
-  
-<div layout class="header"></div>
-
-<div ng-controller="AppCtrl as appCtrl" ng-cloak="" class="gridListdemoResponsiveUsage">
-
-<md-content></md-content>     
-  <md-content layout-padding="">
-    <md-grid-list md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
-      <md-grid-tile ng-repeat="tile in appCtrl.colorTiles" ng-style="{
-            'background': tile.color
-          }" md-colspan-gt-sm="{{tile.colspan}}" md-rowspan-gt-sm="{{tile.rowspan}}">
-      </md-grid-tile>
-    </md-grid-list>
-  </md-content>
-</div>
+    <div class="page-wr">
+    
+        <div class="header-wr">
+            <header layout="row" layout-align="end center" class="header container">
+                <nav class="header-nav">
+                    <a class="header-nav_item" href="#">MEMBER LOGIN</a>
+                    <a class="header-nav_item" href="#">INSTRUCTOR LOGIN</a>    
+                </nav>
+            </header>
+        </div>
 
 
+        <div class="content-wr">
+            <main class="content container">
+                <header class="content-header">
+                    <a href="" class="content-header_logo"></a>
+                    <div class="content-header_sponsor">
+                        <ul class="sponsor">
+                            <li class="sponsor_item"><a href=""></a></li>
+                            <li class="sponsor_item"><a href=""></a></li>
+                            <li class="sponsor_item"><a href=""></a></li>
+                        </ul>
+                    </div>
+                </header>
+                <section class="content-baner"></section>
+                <section class="content-slider"></section>    
+            </main>
+        </div>
+
+
+
+        <footer>
+            
+        </footer>
+
+        <div ng-controller="AppCtrl as appCtrl" ng-cloak="" class="gridListdemoResponsiveUsage">
+
+        <md-content></md-content>     
+          <md-content layout-padding="">
+            <md-grid-list md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
+              <md-grid-tile ng-repeat="tile in appCtrl.colorTiles" ng-style="{
+                    'background': tile.color
+                  }" md-colspan-gt-sm="{{tile.colspan}}" md-rowspan-gt-sm="{{tile.rowspan}}">
+              </md-grid-tile>
+            </md-grid-list>
+          </md-content>
+        </div>
+
+
+    </div>
 
 
 
@@ -75,8 +107,6 @@
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <!-- JS Custom -->
 <script src="js/custom.js"></script>
-
-
 
 </body>
 </html>
