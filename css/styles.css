@@ -82,6 +82,7 @@ h2 {
     max-width: 1185px;
     margin: 0px auto;
     padding: 0 15px 0 15px;
+    box-sizing: border-box;
 }
 
 
@@ -288,14 +289,15 @@ label:hover:before {
 /*content*/
 .content-wr{background-color: #e5e6de;}
 .content{
+    padding-bottom: 65px;
 }
 
+/*content-header*/
 .content-header {
     padding: 60px 0 39px 0;
 }
 
-.content-header_logo {
-}
+.content-header_logo {}
 
 .content-header_sponsor {
     display: inline-block;
@@ -312,6 +314,8 @@ label:hover:before {
 
 
 
+
+/*content-baner*/
 .content-baner{
     background-color: #fff;
 }
@@ -320,15 +324,16 @@ label:hover:before {
 
 .content-baner_img img {
     width: 100%;
+    display: block;
 }
 
 .content-baner_desc{
 }
 
-.desc {
+.content-baner_desc .desc {
 }
 
-.desc_title {
+.content-baner_desc .desc_title {
     font-family: Roboto;
     color: #25262b;
     font-size: 2.375em;/* Приближение из-за подстановки шрифтов */
@@ -339,7 +344,7 @@ label:hover:before {
     margin-bottom: 0px;
 }
 
-.desc_sub-title {
+.content-baner_desc .desc_sub-title {
     font-family: Roboto;
     color: #25262b;
     font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
@@ -350,7 +355,7 @@ label:hover:before {
     margin: 16px 0 48px 0;
 }
 
-.desc_join {
+.content-baner_desc .desc_join {
     font-family: Roboto;
     color: #ffffff;
     font-size: 1.313em;/* Приближение из-за подстановки шрифтов */
@@ -365,12 +370,12 @@ label:hover:before {
     border: 1px solid #fff;
 }
 
-.desc_join:hover {
+.content-baner_desc .desc_join:hover {
     border-color: #0cbfed;
     background-color: #fff;
 }
 
-.desc_sing {
+.content-baner_desc .desc_sing {
     font-family: Roboto;
     color: #3d3d3d;
     font-size: 1.125em;/* Приближение из-за подстановки шрифтов */
@@ -379,6 +384,107 @@ label:hover:before {
     text-align: center;
     text-decoration: none;
 }
+
+
+
+
+
+/*content-lessons*/
+.content-lessons{}
+.content-lessons_title{
+    font-family: Roboto;
+    color: #25262b;
+    font-size: 2.375em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 1.316;/* Приближение из-за подстановки шрифтов */
+    margin: 52px 0 52px 0;
+    margin-left: 10%;
+    letter-spacing: 1px;
+}
+.content-lessons_slider{
+    background-color: #fff;
+    padding: 0 0 61px 0;
+}
+.content-lessons .lessons-slider{
+    margin: 0 0 0 0;
+    padding: 34px 20px 0 20px;
+    box-sizing: border-box;
+}
+.content-lessons .lessons-slider_item{
+    list-style-type: none;
+    max-width: 470px;
+    margin: 0 auto;
+}
+.content-lessons .item{
+    text-align: center;
+}
+.content-lessons .item_video-triger{
+    position: relative;
+}
+.content-lessons .item_video-triger img{
+    display: block;
+    width: 100%;
+}
+.content-lessons .item .arrow{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-lessons .item .arrow:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.content-lessons .item_text{
+    font-family: Roboto;
+    color: #25262b;
+    font-size: 1.125em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.5;/* Приближение из-за подстановки шрифтов */
+    margin-top: 30px;
+    text-align: left;
+}
+.content-lessons .item_link{/* Приближение из-за подстановки шрифтов *//* Приближение из-за подстановки шрифтов */
+    font-family: Roboto;
+    color: #00a9a6;
+    font-size: 1.125em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 1.333;/* Приближение из-за подстановки шрифтов */
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #00A9A6;
+    margin: 1.5em 0 0 0;
+}
+
+.content-lessons .owl-controls{
+    position: absolute;
+    top: 29%;
+    right: 20px;
+    left: 20px;
+    height: 0;
+}
+
+.content-lessons .owl-buttons {
+    height: 0px;
+}
+
+.content-lessons  .owl-prev, .owl-next{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAqCAMAAACeG2tsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAhFBMVEUAAAAAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAqaYAAABisqNUAAAAKnRSTlMAjO+2jf2O4+oy6zGL6egw5y8uCqfiKZg6A3nzQUDyP3g+d/RCevXs/KiuBN7aAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAKlJREFUOMu9j9sCwTAQRKOKokmpu7RKq0X+/wPJetwZj/J4zu5k1hjwRkkyRjwNIUwAn354mOH5kM11fuSLpeJ55JZwV+Cc1ZrwEvdxel762wLPgz6SnxFuSU/QP//V35UkX8+n+N8N67+NfLdX3Bzk46MWp3M0vtLGfE3NzKUB5irmBkwrpqY7FTOemu7OunVop//TPS29R4ynrQfamt/zMCTtiUS85/UG78skCHKFa88AAAAASUVORK5CYII=');
+    height: 50px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+}
+.content-lessons .owl-next{
+    right: 0px;
+    float: right;
+    transform: rotate(180deg);
+}
+.content-lessons  .owl-prev{}
+
 
 
 

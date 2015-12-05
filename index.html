@@ -32,6 +32,7 @@
     
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.css">
 
     <!-- CSS Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -40,6 +41,8 @@
 
     <!-- CSS Custom -->
     <link href="css/styles.css" rel="stylesheet">
+
+
 
     <script>
     // Picture element HTML5 shiv
@@ -63,6 +66,7 @@
 
         <div class="content-wr">
             <main class="content container">
+
                 <header class="content-header" layout="row" layout-align="space-between center">
                     <a href="" class="content-header_logo">
                         <picture>
@@ -119,28 +123,205 @@
                         </ul>
                     </div>
                 </header>
+
                 <section class="content-baner" layout="row" layout-align="space-between center">
-                <div class="content-baner_img" flex="50">
-                    <picture>
-                        <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="images/lg_baner_img.jpg" media="(min-width: 1200px)">
-                        <source srcset="images/md_baner_img.jpg" media="(max-width: 1200px)">
-                        <source srcset="images/sm_baner_img.jpg" media="(max-width: 992px)">
-                        <source srcset="images/xs_baner_img.jpg" media="(max-width: 768px)">
-                        <!--[if IE 9]></video><![endif]-->
-                        <img srcset="images/baner_img.jpg" alt="…" class="">
-                    </picture>                    
-                </div>
-                <div class="content-baner_desc" flex="50">
-                    <div class="desc" layout="column" layout-align="center center">
-                        <h2 class="desc_title">BE INSPIRED.</h2>
-                        <h3 class="desc_sub-title">Fast & Easy Integrated Learning & Engaged Education</h3>
-                        <a href="" class="desc_join">JOIN THE COMMUNITY</a>
-                        <a href="" class="desc_sing">Sign up for Free</a>
+                    <div class="content-baner_img" flex="auto">
+                        <picture>
+                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                            <source srcset="images/lg_baner_img.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/md_baner_img.jpg" media="(max-width: 1200px)">
+                            <source srcset="images/sm_baner_img.jpg" media="(max-width: 992px)">
+                            <source srcset="images/xs_baner_img.jpg" media="(max-width: 768px)">
+                            <!--[if IE 9]></video><![endif]-->
+                            <img srcset="images/baner_img.jpg" alt="…" class="">
+                        </picture>                    
                     </div>
-                </div>
+                    <div class="content-baner_desc" flex="50">
+                        <div class="desc" layout="column" layout-align="center center">
+                            <h2 class="desc_title">BE INSPIRED.</h2>
+                            <h3 class="desc_sub-title">Fast & Easy Integrated Learning & Engaged Education</h3>
+                            <a href="" class="desc_join">JOIN THE COMMUNITY</a>
+                            <a href="" class="desc_sing">Sign up for Free</a>
+                        </div>
+                    </div>
                 </section>
-                <section class="content-slider"></section>    
+
+                <section class="content-lessons">
+                    <h2 class="content-lessons_title">EXPLORE LESSONS</h2>
+                    <div class="content-lessons_slider">
+                        <ul id="lessonsSlider" class="lessons-slider">
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_1.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_1.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_1.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_1.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_1.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_2.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_2.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_2.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_2.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_2.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_2.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_2.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_2.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_2.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_2.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_2.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_2.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>
+                            <li class="lessons-slider_item">
+                                <div class="item">
+                                    <div class="item_video-triger">
+                                        <picture>
+                                            <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                            <source srcset="images/lg_lessons-slider_item_2.jpg" media="(min-width: 1200px)">
+                                            <source srcset="images/md_lessons-slider_item_2.jpg" media="(max-width: 1200px)">
+                                            <source srcset="images/sm_lessons-slider_item_2.jpg" media="(max-width: 992px)">
+                                            <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
+                                        </picture>                                                                                
+                                        <span class="arrow">
+                                            <picture>
+                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                <source srcset="images/md_video-triger-arrow.png" media="(max-width: 1200px)">
+                                                <source srcset="images/sm_video-triger-arrow.png" media="(max-width: 992px)">
+                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                <!--[if IE 9]></video><![endif]-->
+                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                            </picture>                                            
+                                        </span>
+                                    </div>
+                                    <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href="" class="item_link">Sign up now to download</a>
+                                </div>    
+                            </li>                            
+                        </ul>
+                    </div>
+                </section>    
+
             </main>
         </div>
 
@@ -149,20 +330,6 @@
         <footer>
             
         </footer>
-
-        <div ng-controller="AppCtrl as appCtrl" ng-cloak="" class="gridListdemoResponsiveUsage">
-
-        <md-content></md-content>     
-          <md-content layout-padding="">
-            <md-grid-list md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
-              <md-grid-tile ng-repeat="tile in appCtrl.colorTiles" ng-style="{
-                    'background': tile.color
-                  }" md-colspan-gt-sm="{{tile.colspan}}" md-rowspan-gt-sm="{{tile.rowspan}}">
-              </md-grid-tile>
-            </md-grid-list>
-          </md-content>
-        </div>
-
 
     </div>
 
@@ -177,6 +344,10 @@
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/picturefill/dist/picturefill.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.js"></script>
+
 <!-- JS Custom -->
 <script src="js/custom.js"></script>
 
