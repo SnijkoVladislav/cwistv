@@ -78,7 +78,7 @@ h2 {
 .page-wr{}
 
 .container{
-    max-width: 1300px;
+    max-width: 1155px;
     margin: 0px auto;
 }
 
@@ -265,7 +265,7 @@ label:hover:before {
 
 .header-nav {
     flex: 0 1 390px;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     display: flex;
     justify-content: space-between;
 }
@@ -288,14 +288,17 @@ label:hover:before {
     background-color: #e5e6de;
 }
 .content{
-    margin: 0px;
+    margin-top: 65px;
 }
 
 .content-header {}
 
-.content-header_logo {}
+.content-header_logo {
+}
 
-.content-header_sponsor {}
+.content-header_sponsor {
+    display: inline-block;
+}
 
 .sponsor {
     margin: 0 0 0 0;
