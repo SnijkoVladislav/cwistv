@@ -119,7 +119,27 @@
                         </ul>
                     </div>
                 </header>
-                <section class="content-baner"></section>
+                <section class="content-baner" layout="row" layout-align="space-between center">
+                <div class="content-baner_img" flex="50">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="images/lg_baner_img.jpg" media="(min-width: 1200px)">
+                        <source srcset="images/md_baner_img.jpg" media="(max-width: 1200px)">
+                        <source srcset="images/sm_baner_img.jpg" media="(max-width: 992px)">
+                        <source srcset="images/xs_baner_img.jpg" media="(max-width: 768px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="images/baner_img.jpg" alt="…" class="">
+                    </picture>                    
+                </div>
+                <div class="content-baner_desc" flex="50">
+                    <div class="desc" layout="column" layout-align="center center">
+                        <h2 class="desc_title">BE INSPIRED.</h2>
+                        <h3 class="desc_sub-title">Fast & Easy Integrated Learning & Engaged Education</h3>
+                        <a href="" class="desc_join">JOIN THE COMMUNITY</a>
+                        <a href="" class="desc_sing">Sign up for Free</a>
+                    </div>
+                </div>
+                </section>
                 <section class="content-slider"></section>    
             </main>
         </div>
