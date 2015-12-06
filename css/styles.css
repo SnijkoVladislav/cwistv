@@ -534,15 +534,16 @@ label:hover:before {
 .ngdialog-content{
     z-index: 1;
     position: relative;
-    padding: 2em;
-    background-color: #E5E6DE;
+    /* padding: 2em; */
+    background-color: #000000;
+    margin-top: 10vh;
 }
 
 .ngdialog-content iframe {
     margin: 0 auto;
     display: block;
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
 }
 .ngdialog-close{
     position: absolute;
