@@ -78,7 +78,11 @@ picture{
 
 .page-wr{}
 
-
+@media (min-width: 1200px){
+    .container{
+        width: 1185px;
+    }
+}
 /************************
  form style
 *************************/
@@ -243,6 +247,7 @@ label:hover:before {
 
 .header-nav {
     margin-top: 14px;
+    width: 35.4%;
 }
 
 .header-nav_item {
@@ -255,13 +260,22 @@ label:hover:before {
     white-space: nowrap;
 }
 
+.header-nav_item:after:focus {
+    display: none;
+}
+
+.header-nav_item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
 .header-nav_item:hover:after {
     background-color: #0cbfed;
     width: 100%;
 }
 
 .header-nav_item:after {
-    content: "";
+    /* content: ""; */
     width: 0;
     height: 1px;
     display: block;
@@ -283,30 +297,39 @@ label:hover:before {
 
 /*content-header*/
 .content-header {
-    padding: 59px 0 40px 0;
+    padding: 65px 0 37px 0;
 }
 
 .content-header_logo {}
 
-.content-header_sponsor {
-    display: inline-block;
-}
-
+@media (min-width: 768px) {
+    .sponsor {
+        text-align: right;
+    } 
+ }
+ @media (max-width: 768px) {
+    .sponsor {
+        text-align: left;
+        padding-top: 20px !important;
+    }
+ }
+ 
 .sponsor {
     position: relative;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    top: 12px;
-    text-align: justify;
-    display: block;
+    top: 8px;
 }
 
 .sponsor_item {
     display: inline-block;
-    width: 32.6%;
     box-sizing: border-box;
     margin: 0;
-    text-align: right;
+    margin-right: 10.4%;
+}
+
+.sponsor_item:last-child {
+    margin-right: 0;
 }
 
 .sponsor-modBotEdu{}
@@ -321,15 +344,20 @@ label:hover:before {
 }
 
 .content-baner_img {
-    padding: 0;
+    padding: 0 8px 0 0;
 }
 
 .content-baner_img img {
     width: 100%;
     display: block;
 }
+@media (max-width: 1200px){
+    .content-baner_desc{padding-top: 1.5em;}    
+}
+@media (min-width: 1200px){
+    .content-baner_desc{padding-top: 3.5em;}    
+}
 
-.content-baner_desc{padding: 0;}
 
 .content-baner_desc .desc {
     text-align: center;
@@ -376,7 +404,7 @@ label:hover:before {
     background-color: #0cbfed;
     text-decoration: none;
     padding: 1.2em 2.7em 1em 2.8em;
-    margin: 0 0 0.8em 0;
+    margin: 0 0 1.1em 0;
     letter-spacing: 1px;
     border: 1px solid #0CBFED;
     text-transform: uppercase;
@@ -402,6 +430,10 @@ label:hover:before {
     text-transform: initial;
 }
 
+.content-baner_desc .desc_sing:hover {
+    text-decoration: underline;
+}
+
 
 @media (max-width: 778px) {
     .content-baner_desc .desc_sing{
@@ -417,14 +449,15 @@ label:hover:before {
     font-size: 2.375em;
     font-weight: 400;
     line-height: 1.316;
-    margin: 52px 0 52px 0;
-    margin-left: 10%;
+    margin: 50px 0 52px 0;
+    margin-left: 11.1%;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .content-lessons_slider{
     background-color: #fff;
     padding: 0 0 61px 0;
+    max-width: 1155px;
 }
 .content-lessons .lessons-slider{
     margin: 0 0 0 0;
@@ -435,7 +468,7 @@ label:hover:before {
     list-style-type: none;
     max-width: 470px;
     margin: 0 auto;
-    padding: 3em;
+    /* padding: 3em; */
 }
 .content-lessons .item{
     text-align: center;
