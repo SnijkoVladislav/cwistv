@@ -2,3 +2,6 @@
 /bower_components/**/*
 /src/**/*
 /node_modules/**/*
+package.json
+gulpfile.js
+/fB/**/*

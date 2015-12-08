@@ -1,5 +1,5 @@
-angular.module('cwist', ["ngMaterial", "ngDialog"])
-.controller('openVideo', function ($scope, $log, ngDialog) {});
+$.material.init();
+$.material.ripples();
 
 $("#lessonsSlider").owlCarousel({
     items : 2,

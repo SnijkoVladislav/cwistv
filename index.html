@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1, user-scalable=0" />
     <title>Cwist</title>
     <meta name="description" content="">
     <meta name="author" content="cwist">
-<!-- 
+    <!-- 
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
@@ -25,49 +26,44 @@
     <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
- -->    <meta name="msapplication-TileColor" content="#FFFFFF">
-<!--     <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+ -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <!--     <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
  -->
-    
     <!-- CSS Plugins -->
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
-    <link rel="stylesheet" href="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.css">
-
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/ripples.css">
     <!-- CSS Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <!-- <link href="css/font.css" rel="stylesheet"> -->
-
     <!-- CSS Custom -->
     <link href="css/styles.css" rel="stylesheet">
-
     <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
-    </script>    
-
+    document.createElement("picture");
+    </script>
 </head>
 
-<body class="cf" ng-app="cwist">
-    <div class="page-wr cf">
-
+<body>
+    <div id="page-wr" class="page-wr cf">
         <div class="header-wr">
-            <header layout="row" layout-align="end center" class="header container">
-                <nav class="header-nav"  layout="row" layout-align="space-between" layout-align-sm="end" flex="38" flex-gt-lg="34">
-                    <a class="header-nav_item" href="#">MEMBER LOGIN</a>
-                    <a class="header-nav_item" href="#">INSTRUCTOR LOGIN</a>    
-                </nav>
-            </header>
+            <div class="container">
+                <header class="header row">
+                    <nav class="header-nav pull-right col-lg-4 col-md-5 col-sm-8 col-xs-12">
+                        <a class="header-nav_item pull-left" href="#">MEMBER LOGIN</a>
+                        <a class="header-nav_item pull-right" href="#">INSTRUCTOR LOGIN</a>
+                    </nav>
+                </header>
+            </div>
         </div>
-
-
         <div class="content-wr">
             <main class="content container">
-
-                <header class="content-header" layout="row" layout-wrap layout-align="space-between center">
-                    <a href="" class="content-header_logo" flex-sm="100">
+                <header class="content-header row">
+                    <a href="" class="content-header_logo col-md-4 col-sm-6 col-xs-12">
                         <picture>
                             <!--[if IE 9]><video style="display: none;"><![endif]-->
                             <source srcset="images/lg_header_logo.png" media="(min-width: 1200px)">
@@ -76,10 +72,10 @@
                             <source srcset="images/xs_header_logo.png" media="(max-width: 768px)">
                             <!--[if IE 9]></video><![endif]-->
                             <img srcset="images/header_logo.png" alt="…" class="">
-                        </picture>                        
+                        </picture>
                     </a>
-                    <div class="content-header_sponsor" flex-md="40" flex-sm="100">
-                        <ul class="sponsor"  layout="row" layout-align="space-between center">
+                    <div class="content-header_sponsor col-md-6 col-sm-6 col-xs-12 pull-right">
+                        <ul class="sponsor">
                             <li class="sponsor_item">
                                 <a href="">
                                     <picture>
@@ -89,7 +85,7 @@
                                         <source srcset="images/sm_sponsor_modBotEdu.jpg" media="(min-width: 768px)">
                                         <source srcset="images/xs_sponsor_modBotEdu.jpg" media="(max-width: 768px)">
                                         <!--[if IE 9]></video><![endif]-->
-                                        <img class="sponsor-modBotEdu" srcset="images/sponsor_modBotEdu.jpg" alt="…" class="">
+                                        <img class="sponsor-modBotEdu" srcset="images/sponsor_modBotEdu.jpg" alt="…">
                                     </picture>
                                 </a>
                             </li>
@@ -102,8 +98,8 @@
                                         <source srcset="images/sm_sponsor_moss.png" media="(min-width: 768px)">
                                         <source srcset="images/xs_sponsor_moss.png" media="(max-width: 768px)">
                                         <!--[if IE 9]></video><![endif]-->
-                                        <img class="sponsor-moss" srcset="images/sponsor_moss.png" alt="…" class="">
-                                    </picture>                                
+                                        <img class="sponsor-moss" srcset="images/sponsor_moss.png" alt="…">
+                                    </picture>
                                 </a>
                             </li>
                             <li class="sponsor_item">
@@ -115,16 +111,15 @@
                                         <source srcset="images/sm_sponsor_cubelelo.jpg" media="(min-width: 768px)">
                                         <source srcset="images/xs_sponsor_cubelelo.jpg" media="(max-width: 768px)">
                                         <!--[if IE 9]></video><![endif]-->
-                                        <img class="sponsor-cubelelo" srcset="images/sponsor_cubelelo.jpg" alt="…" class="">
-                                    </picture>                                    
+                                        <img class="sponsor-cubelelo" srcset="images/sponsor_cubelelo.jpg" alt="…">
+                                    </picture>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </header>
-
-                <section class="content-baner" layout="row" layout-wrap layout-align="space-between center">
-                    <div class="content-baner_img" flex="auto" flex-sm="100">
+                <section class="content-baner row">
+                    <div class="content-baner_img col-md-6 col-sm-6 col-xs-12">
                         <picture>
                             <!--[if IE 9]><video style="display: none;"><![endif]-->
                             <source srcset="images/lg_baner_img.jpg" media="(min-width: 1200px)">
@@ -133,22 +128,23 @@
                             <source srcset="images/xs_baner_img.jpg" media="(max-width: 768px)">
                             <!--[if IE 9]></video><![endif]-->
                             <img srcset="images/baner_img.jpg" alt="…" class="">
-                        </picture>                    
+                        </picture>
                     </div>
-                    <div class="content-baner_desc" flex="50" flex-sm="100">
-                        <div class="desc" layout="column" layout-align="center center">
-                            <h2 class="desc_title">BE INSPIRED.</h2>
-                            <h3 class="desc_sub-title">Fast & Easy Integrated Learning & Engaged Education</h3>
-                            <md-button href="" class="desc_join">JOIN THE COMMUNITY</md-button>
-                            <md-button href="" class="desc_sing">Sign up for Free</md-button>
+                    <div class="content-baner_desc col-md-6 col-sm-6 col-xs-12">
+                        <div class="desc">
+                            <h2 class="desc_title">be inspired.</h2>
+                            <h3 class="desc_sub-title">Fast &amp; Easy Integrated Learning &amp; Engaged Education</h3>
+                            <hr>
+                            <a href="" class="desc_join btn btn-raised">join the community</a>
+                            <hr>
+                            <a href="" class="desc_sing btn btn-raised">Sign up for Free</a>
                         </div>
                     </div>
                 </section>
-
-                <section class="content-lessons">
-                    <h2 class="content-lessons_title">EXPLORE LESSONS</h2>
+                <section class="content-lessons row">
+                    <h2 class="content-lessons_title">explore lessons</h2>
                     <div class="content-lessons_slider">
-                        <ul id="lessonsSlider" class="lessons-slider" ng-controller="openVideo as foo">
+                        <ul id="lessonsSlider" class="lessons-slider owl-carousel owl-theme">
                             <li class="lessons-slider_item">
                                 <div class="item">
                                     <div class="item_video-triger">
@@ -160,13 +156,8 @@
                                             <source srcset="images/xs_lessons-slider_item_1.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_1.jpg" alt="…" class="">
-                                        </picture>                                                                                 
-                                        <a type="button" class="arrow"
-                                            ng-dialog="templateId"
-                                            ng-dialog-class="ngdialog-theme-flat"
-                                            ng-dialog-controller="openVideo"
-                                            ng-dialog-close-previous>
-                                            <span>
+                                        </picture>
+                                        <span class="arrow" data-toggle="modal" data-target="#myModal1">
                                                 <picture>
                                                     <!--[if IE 8]><video style="display: none;"><![endif]-->
                                                     <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
@@ -177,11 +168,10 @@
                                                     <img srcset="images/video-triger-arrow.png" alt="…" class="">
                                                 </picture>                                            
                                             </span>
-                                        </a>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
                             </li>
                             <li class="lessons-slider_item">
                                 <div class="item">
@@ -194,22 +184,22 @@
                                             <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
-                                        </picture>                                                                                
-                                        <span class="arrow">
-                                            <picture>
-                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
-                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
-                                                <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
-                                                <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
-                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
-                                                <!--[if IE 9]></video><![endif]-->
-                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
-                                            </picture>                                            
-                                        </span>
+                                        </picture>
+                                        <span class="arrow" data-toggle="modal" data-target="#myModal12">
+                                                <picture>
+                                                    <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                    <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                    <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
+                                                    <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
+                                                    <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                    <!--[if IE 9]></video><![endif]-->
+                                                    <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                                </picture>                                            
+                                            </span>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
                             </li>
                             <li class="lessons-slider_item">
                                 <div class="item">
@@ -222,22 +212,22 @@
                                             <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
-                                        </picture>                                                                                
+                                        </picture>
                                         <span class="arrow">
-                                            <picture>
-                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
-                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
-                                                <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
-                                                <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
-                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
-                                                <!--[if IE 9]></video><![endif]-->
-                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
-                                            </picture>                                            
-                                        </span>
+                                                <picture>
+                                                    <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                    <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                    <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
+                                                    <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
+                                                    <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                    <!--[if IE 9]></video><![endif]-->
+                                                    <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                                </picture>                                            
+                                            </span>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
                             </li>
                             <li class="lessons-slider_item">
                                 <div class="item">
@@ -250,22 +240,22 @@
                                             <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
-                                        </picture>                                                                                
+                                        </picture>
                                         <span class="arrow">
-                                            <picture>
-                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
-                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
-                                                <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
-                                                <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
-                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
-                                                <!--[if IE 9]></video><![endif]-->
-                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
-                                            </picture>                                            
-                                        </span>
+                                                <picture>
+                                                    <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                    <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                    <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
+                                                    <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
+                                                    <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                    <!--[if IE 9]></video><![endif]-->
+                                                    <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                                </picture>                                            
+                                            </span>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
                             </li>
                             <li class="lessons-slider_item">
                                 <div class="item">
@@ -278,22 +268,22 @@
                                             <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
-                                        </picture>                                                                                
+                                        </picture>
                                         <span class="arrow">
-                                            <picture>
-                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
-                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
-                                                <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
-                                                <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
-                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
-                                                <!--[if IE 9]></video><![endif]-->
-                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
-                                            </picture>                                            
-                                        </span>
+                                                <picture>
+                                                    <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                    <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                    <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
+                                                    <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
+                                                    <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                    <!--[if IE 9]></video><![endif]-->
+                                                    <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                                </picture>                                            
+                                            </span>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
                             </li>
                             <li class="lessons-slider_item">
                                 <div class="item">
@@ -306,57 +296,60 @@
                                             <source srcset="images/xs_lessons-slider_item_2.jpg" media="(max-width: 768px)">
                                             <!--[if IE 9]></video><![endif]-->
                                             <img srcset="images/lessons-slider_item_2.jpg" alt="…" class="">
-                                        </picture>                                                                                
+                                        </picture>
                                         <span class="arrow">
-                                            <picture>
-                                                <!--[if IE 8]><video style="display: none;"><![endif]-->
-                                                <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
-                                                <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
-                                                <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
-                                                <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
-                                                <!--[if IE 9]></video><![endif]-->
-                                                <img srcset="images/video-triger-arrow.png" alt="…" class="">
-                                            </picture>                                            
-                                        </span>
+                                                <picture>
+                                                    <!--[if IE 8]><video style="display: none;"><![endif]-->
+                                                    <source srcset="images/lg_video-triger-arrow.png" media="(min-width: 1200px)">
+                                                    <source srcset="images/md_video-triger-arrow.png" media="(min-width: 992px)">
+                                                    <source srcset="images/sm_video-triger-arrow.png" media="(min-width: 768px)">
+                                                    <source srcset="images/xs_video-triger-arrow.png" media="(max-width: 768px)">
+                                                    <!--[if IE 9]></video><![endif]-->
+                                                    <img srcset="images/video-triger-arrow.png" alt="…" class="">
+                                                </picture>                                            
+                                            </span>
                                     </div>
                                     <p class="item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <md-button href="" class="item_link">Sign up now to download</md-button>
-                                </div>    
-                            </li>                            
+                                    <a href="" class="item_link btn btn-raised">Sign up now to download</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                </section>    
-
+                </section>
             </main>
         </div>
-
-
-        <div class="footer-wr">        
+        <div class="footer-wr">
             <footer class="footer container"></footer>
         </div>
-
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <iframe src="https://www.youtube.com/embed/c7Q9gob-onQ" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <iframe src="https://www.youtube.com/embed/c7Q9gob-onQ" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script type="text/ng-template" id="templateId">
-        <iframe src="https://www.youtube.com/embed/NeFkrwagYfc" frameborder="0" allowfullscreen></iframe>
-    </script>
-
-
-<!-- JavaScript
+    <!-- JavaScript
 ================================================== -->
-<!-- JS Global -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-material/angular-material.js"></script>
-<script src="bower_components/angular-aria/angular-aria.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/ng-dialog/js/ngDialog.js"></script>
-<script src="bower_components/picturefill/dist/picturefill.js"></script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/modernizr/modernizr.js"></script>
-<script src="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.js"></script>
-
-<!-- JS Custom -->
-<script src="js/custom.js"></script>
-
+    <!-- JS Global -->
+    <script src="js/picturefill.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ripples.js"></script>
+    <script src="js/material.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- JS Custom -->
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

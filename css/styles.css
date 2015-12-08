@@ -24,9 +24,7 @@ a {
     transition: all .3s;
 }
 
-a:hover {
-    color: #0cbfed;
-}
+a:hover {text-decoration: none;}
 
 p {
     color: #929292;
@@ -80,12 +78,6 @@ picture{
 
 .page-wr{}
 
-.container{
-    max-width: 1185px;
-    margin: 0px auto;
-    padding: 0 1em 0 1em;
-    box-sizing: border-box;
-}
 
 /************************
  form style
@@ -157,7 +149,7 @@ textarea.form-control {
 /* checked mark aspect */
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-    content: '✔';
+    content: 'Ã¢Å“â€';
     position: absolute;
     top: 6px;
     left: 3px;
@@ -249,7 +241,9 @@ label:hover:before {
     min-height: 50px;
 }
 
-.header-nav {}
+.header-nav {
+    margin-top: 14px;
+}
 
 .header-nav_item {
     font-family: Roboto;
@@ -257,10 +251,23 @@ label:hover:before {
     font-size: 1.125em;
     font-weight: 900;
     line-height: 1.278;
-    text-align: left;
     text-decoration: none;
-    padding: 0px 10px;
     white-space: nowrap;
+}
+
+.header-nav_item:hover:after {
+    background-color: #0cbfed;
+    width: 100%;
+}
+
+.header-nav_item:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    display: block;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.4s linear;
 }
 
 /************************
@@ -283,7 +290,6 @@ label:hover:before {
 
 .content-header_sponsor {
     display: inline-block;
-    width: 29%;
 }
 
 .sponsor {
@@ -291,10 +297,16 @@ label:hover:before {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     top: 12px;
+    text-align: justify;
+    display: block;
 }
 
 .sponsor_item {
     display: inline-block;
+    width: 32.6%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: right;
 }
 
 .sponsor-modBotEdu{}
@@ -304,10 +316,12 @@ label:hover:before {
 /*content-baner*/
 .content-baner{
     background-color: #fff;
+    background-clip: content-box;
+    padding: 0 15px;
 }
 
 .content-baner_img {
-    flex: 0 1 49.3%;
+    padding: 0;
 }
 
 .content-baner_img img {
@@ -315,10 +329,19 @@ label:hover:before {
     display: block;
 }
 
-.content-baner_desc{}
+.content-baner_desc{padding: 0;}
 
 .content-baner_desc .desc {
+    text-align: center;
     padding: 1em 0 0 0;
+}
+
+.content-baner_desc .desc hr {
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    width: auto;
+    display: block;
 }
 
 .content-baner_desc .desc_title {
@@ -326,10 +349,10 @@ label:hover:before {
     color: #25262b;
     font-size: 2.375em;
     line-height: 1.316;
-    text-align: left;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .content-baner_desc .desc_sub-title {
@@ -338,9 +361,9 @@ label:hover:before {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.25;
-    text-align: center;
     max-width: 235px;
     margin: 0.6em 0 2em 0;
+    display: inline-block;
 }
 
 .content-baner_desc .desc_join {
@@ -355,13 +378,15 @@ label:hover:before {
     padding: 1.2em 2.7em 1em 2.8em;
     margin: 0 0 0.8em 0;
     letter-spacing: 1px;
-    border: 1px solid #fff;
+    border: 1px solid #0CBFED;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .content-baner_desc .desc_join:hover {
-    border-color: #0cbfed;
-    background-color: #fff !important;
-    color: #0cbfed;
+    /* border-color: #0cbfed; */
+    /* background-color: #fff !important; */
+    /* color: #0cbfed; */
 }
 
 .content-baner_desc .desc_sing {
@@ -372,11 +397,16 @@ label:hover:before {
     line-height: 1.667;
     text-align: center;
     text-decoration: none;
-    text-transform: inherit;
+    display: inline-block;
+    margin: 0 auto;
+    text-transform: initial;
 }
 
-.content-baner_desc .desc_sing:hover {
-    border: 1px solid #000;
+
+@media (max-width: 778px) {
+    .content-baner_desc .desc_sing{
+    margin-bottom: 30px;
+}
 }
 
 /*content-lessons*/
@@ -390,6 +420,7 @@ label:hover:before {
     margin: 52px 0 52px 0;
     margin-left: 10%;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .content-lessons_slider{
     background-color: #fff;
@@ -451,14 +482,14 @@ label:hover:before {
 }
 
 .content-lessons .item_link:hover {
-    background-color: #00A9A6 !important;
-    color: #fff;
+    /* background-color: #00A9A6 !important; */
+    /* color: #fff; */
 }
 
 /* content-lessons slider setings*/
 .content-lessons .owl-controls{
     position: absolute;
-    top: 35%;
+    top: 27%;
     right: 20px;
     left: 20px;
     height: 0;
@@ -495,29 +526,25 @@ label:hover:before {
 .content-lessons  .owl-prev{}
 
 /* content-lessons modal setings*/
-.ngdialog-overlay{
-}
-.ngdialog-content{
-    z-index: 1;
-    position: relative;
-    /* padding: 2em; */
-    background-color: #000000;
-    margin-top: 10vh;
-}
 
-.ngdialog-content iframe {
-    margin: 0 auto;
-    display: block;
+.modal-content{
     width: 80vw;
     height: 80vh;
-}
-.ngdialog-close{
     position: absolute;
-    top: 0vw;
-    right: 4vw;
-    color: #0CBFED;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: #000;
 }
-.ngdialog-close:before{}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-open .modal {
+    background-color: rgba(31, 31, 31, 0.81);
+}
 
 /************************
     footer
@@ -530,4 +557,11 @@ label:hover:before {
     height: 97px;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+@media (max-width: 778px) {
+    .footer{
+    background-size: 100%;
+    height: 50px;
+}
 }
