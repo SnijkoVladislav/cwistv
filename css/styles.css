@@ -247,7 +247,12 @@ label:hover:before {
 
 .header-nav {
     margin-top: 14px;
-    width: 35.4%;
+}
+
+@media (min-width: 1100px) { 
+    .header-nav {
+        width: 35.4%;
+    }
 }
 
 .header-nav_item {
@@ -347,9 +352,21 @@ label:hover:before {
     padding: 0 8px 0 0;
 }
 
+@media (max-width: 778px){
+    .content-baner_img{
+        padding: 0px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }    
+}
+
 .content-baner_img img {
     width: 100%;
     display: block;
+    letter-spacing: 0;
+    border: 0;
 }
 @media (max-width: 1200px){
     .content-baner_desc{padding-top: 1.5em;}    
@@ -390,8 +407,14 @@ label:hover:before {
     font-weight: 300;
     line-height: 1.25;
     max-width: 235px;
-    margin: 0.6em 0 2em 0;
+    margin: 0.6em 0 1em 0;
     display: inline-block;
+}
+
+@media (min-width: 990px) { 
+    .content-baner_desc .desc_sub-title {
+        margin-bottom: 2em;
+    }
 }
 
 .content-baner_desc .desc_join {
@@ -465,6 +488,13 @@ label:hover:before {
 
 .content-lessons_slider .item {justify-content: center;padding: 0 0%;}
 
+@media (max-width: 570px) { 
+    .content-lessons_slider .item{
+        flex-direction: column;
+        display: flex !important;
+    }
+}
+
 .carousel-inner > .active {
     display: flex;
 }
@@ -473,13 +503,16 @@ label:hover:before {
     padding: 34px 5em 0 4em;
     box-sizing: border-box;
 }
-.content-lessons .lessons-slider_item{
-    /* list-style-type: none; */
-    /* max-width: 470px; */
-    /* margin: 0 auto; */
-    /* padding: 0; */
-    /* float: none; */
+
+.content-lessons .lessons-slider_item{}
+
+@media (max-width: 570px) { 
+    .content-lessons .lessons-slider_item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
+
 .content-lessons .slide{
     text-align: center;
     margin: 0 auto;
@@ -533,7 +566,7 @@ label:hover:before {
 }
 
 /* content-lessons slider setings*/
-.multi-item-carousel .carousel-inner > .item {
+/*.multi-item-carousel .carousel-inner > .item {
     transition: 0.6s ease-in-out all;
 }
 
@@ -569,7 +602,7 @@ label:hover:before {
         transform: none!important;
     }
 }
-
+*/
 @media (max-width: 400px) { 
     .content-lessons .owl-controls{
         top: 3%;
@@ -596,6 +629,11 @@ label:hover:before {
     z-index: 999;
 }
 
+@media (max-width: 570px) {
+    .content-lessons .carousel-control{
+        display: none;
+    }
+}
 .content-lessons .right{
     right: 20px;
     float: right;
